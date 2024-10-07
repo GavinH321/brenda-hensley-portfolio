@@ -472,6 +472,10 @@ footer {
         margin-bottom: 2rem;
     }
 
+    .about-paragraph {
+        text-align: left;
+    }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -549,6 +553,10 @@ footer {
             transform: translateX(calc(-50% - 1rem));
         }
     }
+
+    .about-paragraph {
+        text-align: left;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -564,5 +572,9 @@ footer {
     #copyright {
         text-align: center;
         width: 80%;
+    }
+
+    .about-paragraph {
+        text-align: left;
     }
 }
