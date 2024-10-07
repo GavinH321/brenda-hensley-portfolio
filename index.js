@@ -1,12 +1,14 @@
 const navToggleInput = document.getElementById("nav-menu-toggle");
 const navToggle = document.getElementById("nav-toggle-label");
-const navLinks = document.querySelector(".nav-links");
+const navLinkList = document.querySelector(".nav-links");
 const scroller = document.querySelector(".scroller");
+const navLinks = document.querySelectorAll(".nav-link");
+
 
 navToggleInput.addEventListener('click', () => {
     navToggle.classList.toggle("menu-clicked");
 
-    navLinks.classList.toggle("links-slide");
+    navLinkList.classList.toggle("links-slide");
 
 })
 
@@ -30,3 +32,14 @@ function duplicatedContent() {
 
 duplicatedContent();
 duplicatedContent();
+
+function closeMenu() {
+    document.getElementById("nav-toggle-label").classList.remove("menu-clicked");
+    navLinkList.classList.toggle("links-slide");
+}
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        closeMenu();
+    })
+})

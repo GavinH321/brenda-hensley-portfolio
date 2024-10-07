@@ -146,6 +146,7 @@ body, html {
     height: fit-content;
     justify-content: center;
     margin: 0;
+    margin-bottom: 1rem;
     padding: 0;
 }
 
@@ -426,8 +427,9 @@ footer {
     .section-paragraph {
         align-self: center;
         justify-self: center;
-        width: 75%;
         max-width: none;
+        text-align: center;
+        width: 75%;
     }
 
     .empty-section {
