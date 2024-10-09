@@ -402,6 +402,10 @@ footer {
     width: 2rem;
 }
 
+#copyright {
+    font-family: var(--body-font-family);
+}
+
 @media screen and (max-width: 1100px) {
     .main {
         height: auto;
